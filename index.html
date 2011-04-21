@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>The Famous Guestbook</title>
+  <meta name="description" content="More to come" />
+  <meta name="author" content="Jeff Girard" />
+  <meta name="copyright" content="None" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js"></script>
+  <script src="js/guestbook.js"></script>
+</head>
+
+<body>
+<div id="wrapper-global">
+  <header>
+    <div id="header-top">
+      <h1>The Famous Guestbook</h1>
+    </div>
+    <nav>
+      <ol>
+        <li><a id="link-list" class="selected" href="">List</a></li>
+        <li><a id="link-add" href="">Add an entry</a></li>
+        <li><a id="link-reset" href="">Reset</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <section id="list">
+    <h2>List</h2>
+    <table class="grid">
+      <thead>
+        <tr>
+          <td>Date</td>
+          <td class="medium">Name</td>
+          <td class="medium">Mail</td>
+          <td class="long">Message</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="default">
+          <td></td><td></td><td></td><td></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr><td colspan="4"></td></tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <section id="add">
+    <h2>Add an entry</h2>
+    <form action="index.html" method="post">
+      <div class="line">
+        <label>Name</label>
+        <input name="fullname" id="field-fullname" placeholder="Type your fullname" type="text" required />
+      </div>
+      <div class="line">
+        <label>Mail</label>
+        <input name="mail" id="field-email" type="email" placeholder="your-name@domain.com" required />
+      </div>
+      <div class="line">
+        <label>Message</label>
+        <textarea id="field-message" name="message" required></textarea>
+      </div>
+      <div class="line operations">
+        <input name="btn-submit" type="submit" value="Add" />
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p><small>TP html5+no-server-side+javascript-only</small></p>
+  </footer>
+</div>
+
+</body>
+</html>

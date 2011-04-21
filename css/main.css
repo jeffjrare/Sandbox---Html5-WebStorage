@@ -1,0 +1,30 @@
+body{font: normal 12px Helvetica, Arial, Verdana, sans-serif;padding-top:10px;}
+a{text-decoration:none;}
+a:hover{border-bottom:2px solid #000;}
+a.selected{font-weight:bold;}
+h1{font-size:18px;}
+h2{font-size:16px;}
+small{font-size:9px;}
+#wrapper-global{margin:0 auto;width:960px;}
+#header-top{border:1px solid #000;padding:15px;}
+nav{border:1px solid #000;margin-top:2px;padding:10px;}
+nav li{display:inline;font-size:14px;margin:2px 20px 2px 20px;}
+section{border:1px solid #000;margin:2px 0;min-height:500px;padding:15px;}
+section#list{}
+section#add{display:none;}
+footer{padding:5px;}
+footer p{text-align:center;width:100%;}
+
+table.grid{margin-top:25px;width:700px;}
+table.grid thead{border-bottom:1px solid #000;font-weight:bold;}
+table.grid thead td{padding:5px;width:200px;}
+table.grid thead td.medium{width:300px;}
+table.grid thead td.long{width:400px;}
+table.grid tbody td{border-bottom:1px solid #ccc;font-size:13px;padding:5px;}
+table.grid tbody tr.default{display:none;}
+
+form{margin-top:25px;width:500px;}
+form div.line, form label{clear:left;float:left}
+form label{width:100px;}
+form input, form textarea{clear:right;float:left}
+form div.line.operations{margin-left:100px;padding:20px;}
